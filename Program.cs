@@ -27,7 +27,7 @@ namespace LineComputation
             double b2 = Convert.ToDouble(Console.ReadLine());
 
             //Calling Length of line function
-            LineComparison lineComparison = new LineComparison();
+            Refractor lineComparison = new Refractor();
             lineComparison.LengthOfLine(x1, y1, x2, y2, a1, b1, a2, b2);
         }
     }
