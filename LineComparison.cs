@@ -26,7 +26,12 @@ namespace LineComparisonUsingObject
             lengthOfLine1 = Math.Sqrt(Math.Pow((a2 - a1), 2) + Math.Pow((b2 - b1), 2));
             Console.WriteLine("Length of a given Line is: " + lengthOfLine1);
 
-            Console.WriteLine(lengthOfLine.Equals(lengthOfLine1));
+            //0 = lines are equal
+            //1 = second line is smaller
+            //-1 = first line is smaller
+            int result = lengthOfLine.CompareTo(lengthOfLine1);
+            Console.WriteLine("Lines are: " + result);
+
         }
 
            
